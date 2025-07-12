@@ -1,0 +1,14 @@
+import telegram
+import time
+
+BOT_TOKEN = "7646067751:AAFsnK4P3eiiJpU8VnvoOgij3yPaCSTynEQ"
+CHANNEL_ID = -1002787400180  # Это твой канал x84goal
+
+bot = telegram.Bot(token=BOT_TOKEN)
+
+bot.send_message(chat_id=CHANNEL_ID, text="✅ Бот успешно запущен через Codespaces!")
+
+# Упрощённая симуляция слежения за матчами
+while True:
+    # Тут будет логика анализа матчей (пока фейковая пауза)
+    time.sleep(3600)
